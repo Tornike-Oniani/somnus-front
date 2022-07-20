@@ -1,0 +1,17 @@
+.container {
+  max-width: 150rem;
+  margin: 0rem auto;
+  background-color: $color-white;
+  box-shadow: $shadow-dark;
+  min-height: 75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  transform: translateY(8rem);
+
+  @media only screen and (max-width: $bp-largest-second) {
+    margin: 0;
+    transform: translateY(0);
+    min-height: 100vh;
+  }
+}

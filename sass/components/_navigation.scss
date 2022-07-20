@@ -1,0 +1,147 @@
+.navigation {
+  border: 0.5rem solid $color-primary-light;
+  background-color: $color-white;
+
+  @media only screen and (max-width: $bp-largest) {
+    border-left: 0;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    border-right: 0;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    border-top: 0.3rem solid $color-primary-light;
+    border-bottom: 0.3rem solid $color-primary-light;
+  }
+
+  &__list {
+    list-style: none;
+
+    @media only screen and (max-width: $bp-medium) {
+      display: flex;
+    }
+  }
+
+  &__item {
+    color: $color-gray-dark-2;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-primary;
+
+      @media only screen and (max-width: $bp-medium) {
+        border-bottom: 0;
+        border-right: 1px solid $color-primary;
+      }
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: $color-primary;
+        transition: width 0.3s ease;
+        z-index: 1;
+      }
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    &__item:hover::before,
+    &__item--active::before {
+      width: 100%;
+    }
+
+    &__item:hover,
+    &__item--active {
+      color: $color-white;
+    }
+  }
+
+  @media only screen and (min-width: $bp-small) {
+    &__item:hover &__icon-box::before,
+    &__item--active &__icon-box::before {
+      width: 100%;
+    }
+
+    &__item:hover &__icon,
+    &__item--active &__icon {
+      fill: $color-white;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    font-size: $default-font-size;
+    position: relative;
+    z-index: 10;
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
+  }
+
+  &__icon-box {
+    padding: 1.2rem 1.5rem;
+    position: relative;
+    margin-right: 1rem;
+    border-right: 1px solid $color-primary;
+
+    @media only screen and (max-width: $bp-medium) {
+      border-right: 0;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0.7rem 0.8rem;
+      margin: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background-color: $color-primary;
+      transition: width 0.3s ease;
+      z-index: 1;
+    }
+  }
+
+  &__icon {
+    display: flex;
+    font-size: 0;
+    line-height: 0;
+    height: 1.8rem;
+    width: 1.8rem;
+    position: relative;
+    z-index: 10;
+
+    @media only screen and (max-width: $bp-small) {
+      height: 1.5rem;
+      width: 1.5rem;
+      fill: currentColor;
+    }
+  }
+}
+
+@media only screen and (max-width: $bp-smallest) {
+  #wsd-item {
+    flex: 1.5;
+  }
+}

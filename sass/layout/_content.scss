@@ -1,0 +1,32 @@
+.content {
+  flex: 1;
+  background-color: $color-gray-light-1;
+  padding: 3rem;
+  // For navigation positioning
+  position: relative;
+
+  @media only screen and (max-width: $bp-medium) {
+    order: 2;
+    padding-top: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 1rem;
+  }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding: 1rem 0;
+  }
+
+  &__description {
+    background-color: $color-white;
+    border-radius: 3px;
+    box-shadow: $shadow-light;
+    padding: 3rem;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 1.5rem;
+    }
+  }
+}

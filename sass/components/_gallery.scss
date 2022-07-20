@@ -1,0 +1,10 @@
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__photo {
+    width: calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
+}

@@ -1,0 +1,30 @@
+.redirect-link:link,
+.redirect-link:visited {
+  display: inline-block;
+  color: $color-primary;
+  font-size: $default-font-size;
+
+  &:hover {
+    color: $color-primary-light;
+
+    &:after {
+      margin-left: 0.7rem;
+    }
+  }
+
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 1.3rem;
+    width: 1.3rem;
+    background-image: url(../img/chevron-thin-right.svg);
+    background-size: cover;
+    margin-right: 0.3rem;
+  }
+
+  &::after {
+    content: '\2192';
+    display: inline-block;
+    transition: all 0.3s;
+  }
+}
