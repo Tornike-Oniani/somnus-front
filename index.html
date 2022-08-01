@@ -16,91 +16,140 @@
 
       <!-- Header -->
       <header class="header">
-        <!-- Logo -->
+        <!-- Title -->
         <div class="header__logo-box">
-          <img src="./img/Brain Logo.png" alt="Somnus logo" class="header__logo">
           <span class="header__text">Somnus</span>
         </div>
 
-        <!-- Heading -->
-        <div class="header__heading-box">
-          <h1 class="header__heading">
-            Tengiz Oniani Laboratory of Sleep-Wakefulness Cycle Studies
-          </h1>
+        <!-- Navbar -->
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active"><a href="index.html" class="navigation__link">Home</a></li>
+            <li class="navigation__item"><a href="index.html" class="navigation__link">News</a></li>
+            <li class="navigation__item"><a href="index.html" class="navigation__link">World Sleep Day</a></li>
+            <li class="navigation__item"><a href="index.html" class="navigation__link">About Us</a></li>
+          </ul>
+        </nav>
+      </header>
+      <header class="header-fixed" id="fixed-header">
+        <!-- Title -->
+        <div class="header-fixed__logo-box">
+          <span class="header-fixed__text">Somnus</span>
         </div>
+
+        <!-- Navbar -->
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active"><a href="index.html" class="navigation__link">Home</a></li>
+            <li class="navigation__item"><a href="news.html" class="navigation__link">News</a></li>
+            <li class="navigation__item"><a href="wsd.html" class="navigation__link">World Sleep Day</a></li>
+            <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
+          </ul>
+        </nav>
       </header>
 
-      <!-- Content -->
-      <div class="content-box">
-        <!-- Sidebar -->
-        <div class="sidebar">
-          <nav class="navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item navigation__item--active"><a href="index.html" class="navigation__link">
-                <div class="navigation__icon-box">
-                  <svg class="navigation__icon">
-                    <use xlink:href="img/sprite.svg#icon-home" />
-                  </svg>
-                </div>
-                Home
-              </a></li>
-              <li class="navigation__item"><a href="news.html" class="navigation__link">
-                <div class="navigation__icon-box">
-                  <svg class="navigation__icon">
-                    <use xlink:href="img/sprite.svg#icon-mail" />
-                  </svg>
-                </div>
-                News
-              </a></li>
-              <li class="navigation__item" id="wsd-item"><a href="wsds.html" class="navigation__link">
-                <div class="navigation__icon-box">
-                  <svg class="navigation__icon">
-                    <use xlink:href="img/sprite.svg#icon-globe" />
-                  </svg>
-                </div>
-                World Sleep Day
-              </a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">
-                <div class="navigation__icon-box">
-                  <svg class="navigation__icon">
-                    <use xlink:href="img/sprite.svg#icon-open-book" />
-                  </svg>
-                </div>
-                About us
-              </a></li>
-            </ul>
-          </nav>
-        </div>
-
-        <!-- Main -->
-        <main class="content">
-          <div class="content__description">
-            <a href="scopus.html" class="redirect-link">Partnership Project #IZ74Z0_137415, Program SCOPES, SNF</a> 
+      <!-- Main -->
+      <main class="content">
+        <!-- Home -->
+        <section class="home">
+          <div class="home__image-box">
+            <img src="/img/White Brain.png" alt="White Brain.png" class="home__image">
           </div>
-
-          <div class="support">
-            <div class="support__image-box">
-              <img src="./img/ukraine.jpg" alt="ukraine.jpg" class="support__image" />
+          <div class="home__content-box">
+            <h2 class="home__title">Tengiz Oniani Laboratory of Sleep-Wakefulness Cycle Studies</h2>
+            <a href="#" class="btn-rounded home__redirect">Neurobiology of Wakefulness and Sleep</a>
+          </div>
+        </section>
+        <!-- Browse world sleep day -->
+        <section class="world-sleep-day">
+          <div class="world-sleep-day__heading">
+            <h2 class="world-sleep-day__title-action">Browse</h2>
+            <h2 class="world-sleep-day__title">World Sleep Day</h2>
+          </div>
+          <div class="carousel">
+            <div class="carousel__item">
+              <div class="carousel__image-box">
+                <img src="/img/wsd-teenager.png" alt="wsd-baby.png" class="carousel__image">
+              </div>
+              <div class="carousel__content">
+                <div class="carousel__label">For Teenagers / 2017</div>
+                <h4 class="carousel__title">World Sleep Day 2017</h4>
+                <p class="carousel__description">2017 წლის 17 მარტს მსოფლიო დღე აღინიშნება. მისი უმთავრესი მიზანია, საზოგადოების ყურადღება გაამახვილოს ძილის მნიშვნელობაზე.</p>
+                <a href="/pdf/WSD2017T.pdf" class="carousel__action">Read more</a>
+              </div>                
             </div>
-            <span class="support__text">Слава Україні</span>
-            <span class="support__text">Glory to Ukraine!</span>
+            <div class="carousel__item">
+              <div class="carousel__image-box">
+                <img src="/img/wsd-adult.png" alt="wsd-baby.png" class="carousel__image">
+              </div>
+              <div class="carousel__content">
+                <div class="carousel__label">For Adults / 2017</div>
+                <h4 class="carousel__title">Lorem ipsum dolor sit</h4>
+                <p class="carousel__description">თუ მეცნიერულ კვლევებს განვიხილავთ, მონაცემები ცალსახად გვიჩვენებს, რომ ძილი უაღრესად მნიშვნელოვანია ჯანსაღი მენტალური და ფიზიკური მდგომარეობისთვის.</p>
+                <a href="/pdf/WSD2017A.pdf" class="carousel__action">Read more</a>
+              </div>                
+            </div>
+            <div class="carousel__item">
+              <div class="carousel__image-box">
+                <img src="/img/wsd-general.png" alt="wsd-baby.png" class="carousel__image">
+              </div>
+              <div class="carousel__content">
+                <div class="carousel__label">General / 2014</div>
+                <h4 class="carousel__title">Lorem ipsum dolor sit</h4>
+                <p class="carousel__description">მეცნიერული კვლევბის შედეგად დაგროვილი ცოდნა მკაფიოდ მიუთითებს ძილის უდიდეს მნიშვნელობაზე ადამიანის ფიზიკური და მენტალური განვითარების, სრუფასოვანი ფუნქციონირებისა და უსაფრთხოებისთვის.</p>
+                <a href="/pdf/WSD2014.pdf" class="carousel__action">Read more</a>
+              </div>                
+            </div>          
           </div>
-        </main>
+          <a href="wsd.html" class="world-sleep-day__browse btn-rounded">Browse all</a>
+        </section>
+        <!-- Events -->
+        <section class="events">
+          <div class="events__heading">
+            <h2 class="events__main-title">Events</h2>
+          </div>
+          <ul class="events__list">
+            <li class="events__item">
+              <div class="events__image-box">
+                <img src="/img/cover2.png" alt="cover-1.png" class="events__image">
+              </div>
+              <div class="events__content">
+                <a class="events__title">Partnership Project #IZ74Z0. Program SCOPES, SNF</a>
+                <p class="events__description">The large body of knowledge and major developments in sleep science over the past 30 years clearly documented that healthy sleep dramatically influences human well being, safety and quality of life.
 
-        <div class="outlet-bar">
-          <div class="outlet-card">
-            <svg class="outlet-card__icon">
-              <use xlink:href="img/sprite.svg#chevron-thin-right" />
-            </svg>
-            <h2 class="outlet-card__heading">Neurobiology of Wakefulness and Sleep</h2>
-          </div>
-        </div>
-      </div>
+                  Progress in development of human sleep research and sleep medicine in Georgia is slow. On the other hand, the number of people suffering from sleep disturbances is progressively rising. Accordingly, the initiation of sleep disorders’ assessment, evaluation and management program is obviously required....</p>
+              </div>
+            </li>
+            <li class="events__item">
+              <div class="events__image-box">
+                <img src="/img/cover2.png" alt="cover-2.png" class="events__image">
+              </div>
+              <div class="events__content">
+                <a class="events__title">Advances in Neuroscience - a Multidisciplinary Event</a>
+                <p class="events__description">The proposed combined event is designed to focus on a perspective of multidisciplinary, in-depth approach to the major topics in the field of neuroscience. The event is structured in such a way that students will be engaged in summer schools well in conference activities, and will also have an opportunity for close interactions with highly qualified faculty
+                  members...</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
 
       <!-- Footer -->
       <footer class="footer">
         &copy; Tengiz Oniani Laboratory of Sleep-Wakefulness Cycle Studies, 2014
       </footer>
     </div>
+
+    <script>
+      window.onscroll = function() {scrollFunction()};
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+          document.getElementById("fixed-header").style.display = "flex";
+        } else {
+          document.getElementById("fixed-header").style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

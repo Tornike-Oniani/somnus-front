@@ -1,0 +1,56 @@
+.wsd {
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba($color-gray, 0.5);
+    box-shadow: $shadow-light;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__content {
+    padding: 2rem 3rem;
+    padding-top: 1rem;
+  }
+
+  &__image-box {
+  }
+
+  &__image {
+    width: 20rem;
+    height: 100%;
+  }
+
+  &__title:link,
+  &__tile:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-text;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      &:after {
+        margin-left: 0.7rem;
+      }
+    }
+
+    &::after {
+      content: '\2192';
+      display: inline-block;
+      transition: all 0.3s;
+    }
+  }
+
+  &__description {
+    font-size: $default-font-size;
+    color: $color-paragraph;
+  }
+}

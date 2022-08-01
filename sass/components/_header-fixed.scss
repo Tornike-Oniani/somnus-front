@@ -1,0 +1,19 @@
+.header-fixed {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 15rem;
+  width: 100%;
+  position: fixed;
+  background-color: $color-primary;
+  display: none;
+
+  &__text {
+    color: $color-white;
+    font-size: 2rem;
+  }
+}
+
+.header-fixed .navigation__link {
+  font-size: 1.6rem;
+}

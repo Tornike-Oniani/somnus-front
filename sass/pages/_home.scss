@@ -1,0 +1,122 @@
+.home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-primary;
+  padding: 3rem 15rem;
+  padding-bottom: 7rem;
+
+  &__image {
+    height: 35rem;
+  }
+
+  &__content-box {
+    background-color: rgba($color-white, 0.8);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 70rem;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    color: $color-accent;
+    margin-bottom: 2rem;
+  }
+}
+
+.world-sleep-day {
+  background-color: $color-gray;
+  padding: 2.5rem 15rem;
+  padding-bottom: 5rem;
+
+  &__heading {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+  }
+
+  &__title-action {
+    color: $color-blue;
+  }
+
+  &__title {
+    color: $color-accent;
+  }
+
+  &__browse {
+    display: inline-block;
+    width: 30rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+}
+
+.events {
+  background-color: $color-primary;
+  padding: 2.5rem 15rem;
+  padding-bottom: 4rem;
+
+  &__heading {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+  }
+
+  &__main-title {
+    color: $color-white;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: flex-start;
+    font-size: $default-font-size;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__image-box {
+    width: 25rem;
+    margin-right: 3rem;
+  }
+
+  &__image {
+    width: 25rem;
+    height: 15rem;
+  }
+
+  &__title,
+  &__title:link,
+  &__title:visited {
+    text-decoration: none;
+    font-size: 2rem;
+    color: $color-blue-light;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:hover {
+      &:after {
+        margin-left: 0.7rem;
+      }
+    }
+
+    &::after {
+      content: '\2192';
+      display: inline-block;
+      transition: all 0.3s;
+    }
+  }
+
+  &__description {
+    color: $color-white;
+  }
+}

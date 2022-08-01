@@ -1,0 +1,9 @@
+.btn-rounded:link,
+.btn-rounded:visited {
+  text-decoration: none;
+  background-color: $color-blue;
+  color: $color-white;
+  font-size: $default-font-size;
+  padding: 1.5rem 2.5rem;
+  border-radius: 1rem;
+}

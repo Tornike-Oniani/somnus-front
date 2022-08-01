@@ -2,10 +2,10 @@
 
 @import 'base/base';
 @import 'base/typography';
+@import 'base/utilities';
 
 @import 'layout/container';
 @import 'layout/header';
-@import 'layout/content-box';
 @import 'layout/sidebar';
 @import 'layout/content';
 @import 'layout/outlet-bar';
@@ -17,3 +17,12 @@
 @import 'components/gallery';
 @import 'components/list';
 @import 'components/support';
+@import 'components/button-rounded';
+@import 'components/carousel';
+@import 'components/header-fixed';
+@import 'components/speakers';
+
+@import 'pages/home';
+@import 'pages/news';
+@import 'pages/wsd';
+@import 'pages/chaqvi';
