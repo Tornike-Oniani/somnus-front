@@ -7,13 +7,31 @@
   position: fixed;
   background-color: $color-primary;
   display: none;
+  z-index: 1000;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2.5rem 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+  }
 
   &__text {
     color: $color-white;
     font-size: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 }
 
 .header-fixed .navigation__link {
   font-size: 1.6rem;
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.4rem;
+  }
 }

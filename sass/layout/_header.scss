@@ -5,17 +5,25 @@
   padding: 2.5rem 15rem;
   background-color: $color-primary;
 
+  @media only screen and (max-width: $bp-large) {
+    padding: 2.5rem 5rem;
+  }
+
   @media only screen and (max-width: $bp-medium) {
-    display: flex;
+    padding: 2.5rem 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 1.5rem 1rem;
     flex-direction: column;
-    border-bottom: $line;
   }
 
   &__text {
     color: $color-white;
     font-size: 3rem;
-  }
 
-  &__redirect {
+    @media only screen and (max-width: $bp-small) {
+      font-size: 2.5rem;
+    }
   }
 }

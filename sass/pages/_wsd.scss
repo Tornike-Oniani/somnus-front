@@ -12,6 +12,10 @@
     &:not(:last-child) {
       margin-bottom: 2rem;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
   }
 
   &__content {
@@ -20,18 +24,25 @@
   }
 
   &__image-box {
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
   }
 
   &__image {
     width: 20rem;
     height: 100%;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
   }
 
   &__title:link,
   &__tile:visited {
     display: inline-block;
     text-decoration: none;
-    color: $color-text;
+    color: $color-blue-light;
     font-weight: bold;
     font-size: 2rem;
     cursor: pointer;

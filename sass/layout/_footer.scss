@@ -3,4 +3,12 @@
   background-color: $color-gray-dark-1;
   font-size: $default-font-size;
   color: $color-gray-light-3;
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 1.5rem 5rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1.5rem 3rem;
+  }
 }

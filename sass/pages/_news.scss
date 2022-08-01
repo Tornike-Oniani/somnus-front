@@ -1,5 +1,13 @@
 .content {
   &__description {
     padding: 3rem 15rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 3rem 10rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 3rem 3rem;
+    }
   }
 }
