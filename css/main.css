@@ -327,31 +327,19 @@ body {
 }
 
 .carousel {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-@media only screen and (max-width: 56.25em) {
-  .carousel {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(33rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+  justify-items: center;
+  -webkit-column-gap: 5rem;
+     -moz-column-gap: 5rem;
+          column-gap: 5rem;
+  row-gap: 3.5rem;
 }
 
 .carousel__item {
+  max-width: 36.5rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -366,29 +354,7 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   color: #555555;
-  width: 33rem;
   font-size: 1.6rem;
-}
-
-@media only screen and (max-width: 70.9375em) {
-  .carousel__item {
-    width: 25rem;
-  }
-}
-
-@media only screen and (max-width: 56.25em) {
-  .carousel__item {
-    width: 50rem;
-  }
-  .carousel__item:not(:last-child) {
-    margin-bottom: 3rem;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .carousel__item {
-    width: 90%;
-  }
 }
 
 .carousel__content {
@@ -419,25 +385,7 @@ body {
 }
 
 .carousel__image {
-  width: 33rem;
-}
-
-@media only screen and (max-width: 70.9375em) {
-  .carousel__image {
-    width: 25rem;
-  }
-}
-
-@media only screen and (max-width: 56.25em) {
-  .carousel__image {
-    width: 50rem;
-  }
-}
-
-@media only screen and (max-width: 37.5em) {
-  .carousel__image {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .carousel__label {
@@ -641,17 +589,13 @@ body {
 }
 
 .home__image {
-  height: 35rem;
-}
-
-@media only screen and (max-width: 70.9375em) {
-  .home__image {
-    height: 25rem;
-  }
+  width: 100%;
+  max-width: 35rem;
 }
 
 @media only screen and (max-width: 56.25em) {
   .home__image {
+    height: 25rem;
     margin-bottom: 2rem;
   }
 }
@@ -672,12 +616,13 @@ body {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  width: 55%;
   max-width: 70rem;
 }
 
 @media only screen and (max-width: 70.9375em) {
   .home__content-box {
-    max-width: 50rem;
+    max-width: 80rem;
   }
 }
 
